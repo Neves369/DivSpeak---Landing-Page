@@ -1,0 +1,81 @@
+.banner-section {
+	height: auto;
+	background-image: url(../images/banner/banner-bg.png);
+	position: relative;
+	padding-top: 130px;
+	overflow: hidden;
+	background-size: cover;
+	.banner-content {
+		text-align: center;
+		padding-bottom: 150px;
+		position: relative;
+		z-index: 1;
+	}
+	@include breakpoint(md){
+		padding-top: 165px;
+	}
+	@include breakpoint(lg){
+		height: 100vh;
+		padding-top: 0;
+		.banner-content {
+			height: 100%;
+			text-align: left;
+			padding-bottom: 0;
+		}
+	}
+}
+
+.banner-text {
+	h5 {
+		font-size: 18px;
+		font-weight: 400;
+		color: #82859c;
+		font-family: $ff-os;
+		margin-bottom: 10px;
+		@include breakpoint(md){
+			font-size: 22px;
+		}
+	}
+	h1 {
+		font-size: 24px;
+	    color: white;
+	    margin-bottom: 20px;
+	    line-height: 1.1;
+	    font-family: $ff-Rubik;
+		  background: -webkit-linear-gradient(right, #566bee, #976df5);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+	    @include breakpoint(sm){
+	    	font-size: 30px;
+	    }
+	    @include breakpoint(xxl-desktop){
+	    	font-size: 44px;
+	    }
+	}
+	p {
+		color: #82859c;
+		font-family: $ff-os;
+		margin-bottom: 40px;
+	}
+	.button-group {
+		.custom-btn {
+			font-size: 13px;
+			padding: 13px 40px;
+			border: 1px solid #4b6deb;
+			font-weight: 500;
+			border-radius: 30px;
+			color: #4b6deb;
+			text-transform: uppercase;
+			@include transition(0.3s);
+			&.active {
+				background: -webkit-linear-gradient(right, #566bee, #976df5);
+				color: white;
+				border: 1px solid transparent;
+			}
+			@include breakpoint(lg){
+				font-size: 14px;
+				padding: 17px 50px;
+			}
+		}
+	}
+}

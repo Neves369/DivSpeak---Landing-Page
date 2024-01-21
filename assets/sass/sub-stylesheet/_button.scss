@@ -1,0 +1,32 @@
+
+
+
+.custom-btn {
+	padding: 16px 35px;
+	border: 2px solid $base-color;
+	text-align: center;
+	display: inline-block;
+	color: $base-color;
+	@include border-radius(3px);
+	@include transition(0.3s);
+	&:hover {
+		background-color: $base-color;
+		color: $white;
+	}
+}
+
+.blog-custom-btn {
+	font-size: 14px;
+	font-weight: 700;
+	padding: 12px 37px;
+	text-align: center;
+	display: inline-block;
+	color: $white;
+	background-color: $base-color;
+	@include border-radius(3px);
+	@include transition(0.3s);
+	&:hover {
+		background-color: $title-color;
+		color: $white;
+	}
+}

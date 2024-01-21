@@ -1,0 +1,149 @@
+/*
+  Template Name: Axsis landingpage HTML Template;
+  Template URI: https://themeforest.net/user/flux-theme;
+  Author: Flux Theme;
+  Author URI: https://themeforest.net/user/flux-theme;
+  Description: ;
+  Version: 1.0.0;
+  Text Domain axsis;
+  Tages: apps, html, template, landingpage,saas;
+*/
+/*
+.........................................
+        Table of Contents:
+
+# Reseat Css
+# Global CSS
+# Heading CSS
+# Banner CSS
+# Features CSS
+# Screenshot CSS
+# Video CSS
+# Interface Slider CSS
+# Pricing CSS
+# Testimonial CSS
+# FAQ CSS
+# Blog CSS
+# Contact CSS
+# Footer CSS
+.........................................
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  color: #8c9195;
+  text-align: left;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.375em;
+}
+
+h3 {
+  font-size: 1.875em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+  margin: 5px 0;
+}
+
+h6 {
+  font-size: 1.125em;
+  margin: 5px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #273167;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
+}
+
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+  color: inherit;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-size: 14px;
+  margin: 0 0 1.6em;
+  color: #8c9195;
+  line-height: 1.75;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+@media (min-width: 1500px) {
+  p {
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+.section-header h3 {
+  font-size: 26px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+.section-header p {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+
+@media (max-width: 992px){
+  .section-header h3 {
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+  .section-header p {
+    font-size: 13px;
+    line-height: 26px;
+  }
+}

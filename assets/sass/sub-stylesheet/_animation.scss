@@ -1,0 +1,157 @@
+.shape-animation {
+	li {
+		position: absolute;
+	}
+}
+
+.cross-shape {
+	&.one {
+		left: 5%;
+		top: 30%;
+		animation: round1 20s infinite;
+	}
+	&.two {
+		right: 55%;
+		bottom: 10%;
+		animation: round2 20s infinite;
+	}
+	span {
+		position: relative;
+		width: 24px;
+		height: 24px;
+		display: block;
+		transform: rotate(-45deg) scale(0.8);
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 100%;
+			height: 6px;
+			margin-top: -3px;
+			background-color: #aaa5f1;
+			border-radius: 5px;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 0;
+			width: 6px;
+			height: 100%;
+			margin-left: -3px;
+			background-color: #aaa5f1;
+			border-radius: 5px;
+		}
+	}
+}
+
+.rect-shape {
+	&.one {
+		left: 48%;
+		top: 20%;
+		animation: round2 15s infinite;
+	}
+	&.two {
+		left: 53%;
+		bottom: 15%;
+		animation: round1 25s infinite;
+	}
+	&.three {
+		left: 15%;
+		top: 55%;
+		animation: round2 10s infinite;
+	}
+	&.four {
+		left: 3%;
+		bottom: 2%;
+		animation: round1 20s infinite;
+	}
+	span {
+		width: 24px;
+		height: 24px;
+		border: 5px solid #aaa5f1;
+		display: block;
+		border-radius: 3px;
+		transform: rotate(-45deg) scale(0.8);
+	}
+}
+
+.roundShapeleft {
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 150px;
+		height: 150px;
+		background-image: url(../images/roundShape1.png);
+		background-size: cover;
+		@include breakpoint(lg){
+			width: 300px;
+			height: 300px;
+		}
+	}
+}
+
+.roundShaperight {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: 30%;
+		width: 100px;
+		height: 150px;
+		background-image: url(../images/roundShape2.png);
+		background-size: cover;
+		@include breakpoint(lg){
+			width: 226px;
+			height: 300px;
+		}
+	}
+}
+
+
+.angleShape {
+	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		left: 48%;
+		top: 50%;
+		width: 1273px;
+		height: 1000px;
+		-webkit-border-radius: 150px;
+		-moz-border-radius: 150px;
+		border-radius: 120px;
+		background-color: #eef3fa;
+		z-index: 0;
+		transform: skew(-15deg) rotate(38deg) translateY(-50%);
+	}
+}
+
+
+
+
+
+
+
+@keyframes round1 {
+  0%,100% {
+  	transform: rotate(45deg);
+  }
+  50% {
+  	transform: rotate(480deg);
+  }
+}
+
+@keyframes round2 {
+  0%,100% {
+  	transform: rotate(45deg);
+  }
+  50% {
+  	transform: rotate(-480deg);
+  }
+}
